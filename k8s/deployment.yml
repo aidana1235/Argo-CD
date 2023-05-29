@@ -9,7 +9,7 @@ spec:
   selector:
     matchLabels:
       app: nginx-app
-  replicas: 2
+  replicas: 3
   template:
     metadata:
       labels:
@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
         - name: nginx-app-john
-          image: fadydevops/myapp:v1
+          image: aidanasaccount2004/argocdimg:v1
           ports:
             - containerPort: 8080
